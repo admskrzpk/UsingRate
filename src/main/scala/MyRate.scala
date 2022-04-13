@@ -23,7 +23,6 @@ object MyRate extends App {
 
   val directory = args(0)
   var pw: PrintWriter = _
-  //epochId = batchId
 
   val writer = new ForeachWriter[(Timestamp, Long)] {
     override def open(partitionId: Long, epochId: Long): Boolean = {
